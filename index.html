@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+                    <!-- main css  -->
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="text-center" style="color: red;">BÀI TẬP 1 : </div>
+                        
+        <div class="py-5">
+            <form>
+                <p> Xuất 3 số theo thứ tự tăng dần</p>
+                <p> nhập 3 số nguyên theo thứ tự từng ô </p>
+                <div class="form-group d-flex t">
+                  <input placeholder="Số thứ tự 1 " type="number" class="form-control mr-2 w-auto" id="inpstt1">
+                  <input placeholder="Số thứ tự 2" type="number" class="form-control mr-2 w-auto" id="inpstt2">
+                  <input placeholder="Số thứ tự 3" type="number" class="form-control w-auto" id="inpsst3">
+                </div>
+                <div class="form-group">
+                  </div>
+                  <div>
+                      <button onclick="btnsapXep()" type="button" class="btn bg-primary " style="color: #fff">Sắp Xếp</button>
+                  </div>
+            </form>
+            <p id="txtketQua" class="alert bg-primary my-2 w-25" style="display: none; color:#fff" ></p>
+        </div> 
+            <div class="text-center py-5" style="color: red;">BÀI TẬP 2</div>
+            <div class="card" style="width: 20rem;">
+                <div class="card-header text-white bg-primary text-center">
+                    Chào Hỏi
+                </div>
+                <div class="card-body">
+                    <form>                 
+                        <div class="form-group">
+                            <label for="">Bạn muốn gửi lời chào đến !</label>
+                            
+                            <select class="form-control" id="select">
+    
+                                <option>--Chọn Thành viên--</option>
+                                <option value="B">Bố</option>
+                                <option value="M">Mẹ</option>
+                                <option value="A">Anh Trai</option>
+                                <option value="EG">Em Gái</option>
+                            </select>
+                        </div>
+                        
+                        <button onclick="sayHello()" type="button" class="btn bg-primary" id="btnCalc">Gửi Lời Chào</button>
+                    </form>
+                    <p class="mt-2 alert bg-primary  text-white" id="Hello" style="display: none;" ></p>
+                </div>
+            </div>
+        <div class="text-center py-5" style="color: red;">BÀI TẬP 3</div>
+        <div class="py-5">
+            <form>
+                <p>Đếm Số Chẵn Lẽ</p>
+                <p> Mời nhập 3 số nguyên</p>
+                <div class="form-group d-flex">
+                  <input placeholder="Nhập số thứ 1" type="number" class="form-control mr-2 w-auto" id="inpsoThu1">
+                  <input placeholder="Nhập số thứ 2" type="number" class="form-control mr-2 w-auto" id="inpsoThu2">
+                  <input placeholder="Nhập số thứ 3" type="number" class="form-control w-auto" id="inpsoThu3">
+                </div>
+                <div class="form-group">
+                  </div>
+                <button onclick="btnChanLe()" type="button" class="btn btn-primary">Đếm</button>
+            </form>
+            <p id="tongChanLe" class="alert btn-primary my-2 w-25" style="display: none;"></p>
+        </div>
+        <div class="text-center py-5" style="color: red;">BÀI TẬP 4</div>
+        <div class="py-5">
+            <form>
+                <p>Đoán hình tam giác</p>
+                <p> Vui lòng nhập độ dài 3 cạnh</p>
+                <div class="form-group d-flex">
+                  <input placeholder="Cạnh thứ 1" type="number" class="form-control mr-2 w-auto" id="canhThu1">
+                  <input placeholder="Cạnh thứ 2" type="number" class="form-control mr-2 w-auto" id="canhThu2">
+                  <input placeholder="Cạnh thứ 3" type="number" class="form-control w-auto" id="canhThu3">
+                </div>
+                <div class="form-group">
+                  </div>
+                <button onclick="tinh3Canh()" type="button" class="btn btn-primary">Đếm</button>
+            </form>
+            <p id="txtXuat" class="alert btn-primary my-2 w-25" style="display: none;"></p>
+        </div>
+    </div>
+
+                    <!-- main css -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
